@@ -1,0 +1,4 @@
+#selectable .ui-selected {
+  background: rgb(204, 236, 248);
+  color: black;
+}

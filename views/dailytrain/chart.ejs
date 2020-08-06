@@ -1,0 +1,37 @@
+<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+
+<!-- Just before the closing body tag is best -->
+<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+
+<br/>
+<br/>
+<br/>
+
+
+<div id="myChart">
+
+  <div class="md-form input-group">
+    <input type="text" class="form-control" placeholder="종류" aria-label="Recipient's username with two button addons"
+      aria-describedby="MaterialButton-addon4">
+    <div class="input-group-append" id="MaterialButton-addon4">
+      <button class="btn btn-md btn-dark m-0 px-3" type="button">수행능력</button>
+      <button class="btn btn-md btn-dark m-0 px-3" type="button">체중</button>
+    </div>
+  </div>
+
+<script>
+  var kgArry = new Array(); // 배열선언
+  
+
+  zingchart.render({
+    id: 'myChart',
+    data: {
+      type: 'line',
+      series: [
+        { values: [54,23,34,23,43] },
+        { values: [10,15,16,20,40] }
+      ]
+    }
+  });
+</script>
+</body>
